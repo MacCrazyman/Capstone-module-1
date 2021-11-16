@@ -45,7 +45,6 @@ html {
 
 .theme4 {
   color: white;
-
 }
 
 .theme5 {
@@ -58,6 +57,10 @@ html {
 
 .darkBg {
   background-color: var(--secondary);
+}
+
+.mosaic_bg {
+  background-image: url(img/mosaic_bg.png);
 }
 
 .section_hr {
@@ -101,6 +104,10 @@ section {
   background-color: var(--secondary);
 }
 
+.card_icon {
+  width: 5em;
+}
+
 
 /* utility */
 
@@ -119,6 +126,22 @@ section {
   opacity: 0;
 }
 
+.icon-bar-container {
+  height: 24px;
+  width: 24px;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin: 25px;
+  position: absolute;
+}
+
+
+.icon-bar {
+  background-color: var(--secondary);
+  height: 4px;
+  border-radius: 1px;
+  width: 24px;
+}
 
 /* Media queries */
 
@@ -137,5 +160,9 @@ section {
     margin: initial;
     padding: initial;
     opacity: 1;
-}
+  }
+
+  .only_mobile {
+    display: none;
+  }
 }

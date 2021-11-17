@@ -2,6 +2,7 @@
   --primary: #ec5242;
   --secondary: #272a31;
   --third: #d3d3d3;
+  --third_transparent: #d3d3d320;
   --cocogoose: 'COCOGOOSE', sans-serif
 }
 
@@ -179,8 +180,37 @@ main>#homePage {
 
 }
 
+#program_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+article {
+  background: var(--third_transparent);
+  padding: 16px;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 3fr; */
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: center;
+}
+
 .card_icon {
-  width: 5em;
+  width: 100%;
+  width: 15%;
+}
+
+.card_title {
+  color: var(--primary);
+  font-size: 20px;
+  width: 25%;
+}
+
+.card_text {
+  color: white;
+  font-size: 16px;
+  width: 60%;
 }
 
 #partner_list {

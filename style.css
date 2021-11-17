@@ -180,9 +180,14 @@ main>#homePage {
 
 }
 
+#program_section {
+  flex-direction: column;
+}
+
 #program_cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
 }
 
@@ -211,6 +216,15 @@ article {
   color: white;
   font-size: 16px;
   width: 60%;
+}
+
+#join_button {
+  background-color: var(--primary);
+  border: none;
+  padding: 32px 64px;
+  color: white;
+  font-size: 24px;
+  margin-block: 32px;
 }
 
 #partner_list {

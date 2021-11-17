@@ -108,6 +108,36 @@ section {
   width: 5em;
 }
 
+#partner_list {
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#partner_list>li {
+  /* width: 30%; */
+  text-align: center;
+}
+
+.partner_picture {
+  margin: 0.5em;
+  height: 2.5em;
+  max-width: auto;
+  filter: grayscale(1);
+}
+
+footer {
+  padding: 2.5em;
+}
+
+footer>div {
+  width: 100%;
+  justify-content: space-between;
+}
+
+footer>div>* {
+  width: 45%;
+  flex-grow: 0;
+}
 
 /* utility */
 
@@ -138,7 +168,7 @@ section {
 
 .icon-bar {
   background-color: var(--secondary);
-  height: 4px;
+  height: 5px;
   border-radius: 1px;
   width: 24px;
 }

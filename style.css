@@ -24,6 +24,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.noShow {
+  opacity: 0;
+}
+
 .theme1 {
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 2.075em;
@@ -106,6 +110,16 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1em;
+  transition: all 0.5 ease-in-out;
+}
+
+.modal_menu {
+  position: absolute;
+  height: 100%;
+  background-image: url(img/mosaic_bg.png);
+  top: 0;
+  z-index: 1;
+
 }
 
 #menu {
@@ -177,6 +191,15 @@ footer>div>* {
 }
 
 /* utility */
+.noScroll {
+  overflow-y: hidden;
+}
+
+.autoScroll {
+  overflow-y: auto;
+}
+
+
 
 .hidden {
   height: 0;
@@ -186,12 +209,17 @@ footer>div>* {
 }
 
 .icon-bar-container {
-  height: 30px;
-  width: 30px;
+  width: fit-content;
   flex-flow: column nowrap;
   justify-content: space-between;
-  margin: 1rem;
-  position: absolute;
+  margin: 0.5rem;
+  padding: 1rem;
+  position: fixed;
+  gap: 6px;
+  top: 0;
+  z-index: 2;
+  background-color: var(--third);
+  border-radius: 10px;
 }
 
 
@@ -199,8 +227,23 @@ footer>div>* {
   background-color: var(--secondary);
   height: 6px;
   border-radius: 1px;
-  width: 100%;
+  width: 30px;
+  transition: all 1s ease-in-out;
+  transform-origin: 5px 50%;
 }
+
+.rotatePos {
+  transform: rotate(45deg) translate(5px);
+  width: 33px;
+  border-radius: 5px;
+}
+
+.rotateNeg {
+  transform: rotate(-45deg) translate(5px);
+  border-radius: 5px;
+  width: 33px;
+  }
+
 
 /* Media queries */
 

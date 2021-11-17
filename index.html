@@ -17,7 +17,7 @@
   <!-- Page Header -->
 
   <header>
-    <div id="social_header" class="flex_container hidden">
+    <div id="social_header" class="flex_container only_desktop">
       <ul class="unstyled flex_container">
         <li class="list_item"><img src="img/fb_icon.svg" alt="facebook_logo"></li>
         <li class="list_item"><img src="img/twitter_icon.svg" alt="twitter_logo"></li>
@@ -27,18 +27,18 @@
     </div>
     <div id="navigation" class="flex_container">
       
-      <a href="" class="btn btn_toggle btn_menu">
+      <a href="" class="btn btn_toggle btn_menu only_mobile">
         <span class="icon-bar-container flex_container">
           <span class="icon-bar icon-bar-top"></span>
           <span class="icon-bar icon-bar-middle"></span>
           <span class="icon-bar icon-bar-bottom"></span>
         </span>
       </a>
-      <nav class="nav_bar">
-        <ul class="unstyled flex_container">
-          <li class="list_item only_desktop"><a class="nav_link" href="#"><img src="img/fise.svg" alt="Fise logo"><h1 class="hidden">FISE</h1></a></li>
-          <li class="list_item"><a class="nav_link" href="#homePage">Home</a></li>
-          <li class="list_item"><a class="nav_link" href="#aboutPage">About</a></li>
+      <nav class="nav_bar flex_container on only_desktop">
+        <a id="nav_logo" class="nav_link only_desktop" href="#"><img src="img/fise.svg" alt="Fise logo"><h1 class="hidden">FISE</h1></a>
+        <ul id="menu" class="unstyled flex_container">
+          <li id="nav_home" class="list_item"><a class="nav_link" href="#homePage">Home</a></li>
+          <li id="nav_about" class="list_item"><a class="nav_link" href="#aboutPage">About</a></li>
         </ul>
       </nav>
     </div>

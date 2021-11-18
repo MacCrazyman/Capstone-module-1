@@ -83,6 +83,7 @@ hr {
 }
 
 .section_header {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -311,9 +312,11 @@ footer > div > * {
   flex-flow: column;
   gap: 16px;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 #past_introduction {
+  width: 100%;
   font-size: 16px;
   color: var(--secondary);
   padding-bottom: 30px;
@@ -508,6 +511,15 @@ footer > div > * {
 
   #speakers_header {
     grid-area: 1/span 2;
+  }
+
+  #past_summits {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .summit_card {
+    width: 49%;
   }
 
   /* utility */

@@ -156,9 +156,29 @@ section {
   padding-inline: 1em;
 }
 
-main>#homePage {
+#homePage, #aboutPage {
     padding-top: 6rem;
     padding-bottom: 3rem;
+}
+
+#aboutPage {
+  text-align: center;
+  background-color: var(--third);
+  color: var(--secondary);
+}
+
+#aboutPage .intro_p {
+  max-width: 100%;
+  width: 100%;
+}
+
+#mail_link {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: var(--secondary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--secondary);
 }
 
 #social_header {
@@ -187,11 +207,28 @@ main>#homePage {
 
 #event_place {
   font-size: 16px;
-
 }
 
 #program_section {
   flex-direction: column;
+}
+
+#logo_disclaimer {
+  background-color: white;
+  text-align: center;
+  border-bottom: 2px solid var(--third);
+  padding-bottom: 40px;
+}
+
+#disclaimer {
+  padding-bottom: 2rem;
+  font-size: 16px;
+}
+
+#logo_presentation {
+  border: 2px solid var(--third);
+  padding: 32px;
+  width: 100%;
 }
 
 #program_cards {
@@ -272,6 +309,60 @@ footer>div>* {
   gap: 32px;
   padding-bottom: 3rem;
 }
+
+#past_summits {
+  flex-flow: column;
+  gap: 16px;
+  padding-bottom: 40px;
+}
+
+#past_introduction {
+  font-size: 16px;
+  color: var(--secondary);
+  padding-bottom: 30px;
+}
+
+.summit_card {
+  position: relative;
+  width: 100%;
+}
+
+.summit_bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: var(--primary);
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ec524299;
+  width: inherit;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+}
+
+.summit_year {
+  font-size: 48px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.summit_comment {
+  font-size: 32;
+  width: 100%;
+  font-weight: 400;
+}
+
+
 
 /* dinamic cards */
 .speaker_container {

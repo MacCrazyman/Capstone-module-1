@@ -5,6 +5,36 @@ const speakers = [
     title: 'Berkman Professional of Entrepreurial Legal Studies at Harvard Law School',
     description: 'Benkler studies commons based peer production, and pusblished his seminal book The Wealth of Networks in 2006.',
   },
+  {
+    picture: 'img/speakers/benkler.png',
+    name: 'Yochain Benkler',
+    title: 'Berkman Professional of Entrepreurial Legal Studies at Harvard Law School',
+    description: 'Benkler studies commons based peer production, and pusblished his seminal book The Wealth of Networks in 2006.',
+  },
+  {
+    picture: 'img/speakers/benkler.png',
+    name: 'Yochain Benkler',
+    title: 'Berkman Professional of Entrepreurial Legal Studies at Harvard Law School',
+    description: 'Benkler studies commons based peer production, and pusblished his seminal book The Wealth of Networks in 2006.',
+  },
+  {
+    picture: 'img/speakers/benkler.png',
+    name: 'Yochain Benkler',
+    title: 'Berkman Professional of Entrepreurial Legal Studies at Harvard Law School',
+    description: 'Benkler studies commons based peer production, and pusblished his seminal book The Wealth of Networks in 2006.',
+  },
+  {
+    picture: 'img/speakers/benkler.png',
+    name: 'Yochain Benkler',
+    title: 'Berkman Professional of Entrepreurial Legal Studies at Harvard Law School',
+    description: 'Benkler studies commons based peer production, and pusblished his seminal book The Wealth of Networks in 2006.',
+  },
+  {
+    picture: 'img/speakers/benkler.png',
+    name: 'Yochain Benkler',
+    title: 'Berkman Professional of Entrepreurial Legal Studies at Harvard Law School',
+    description: 'Benkler studies commons based peer production, and pusblished his seminal book The Wealth of Networks in 2006.',
+  }
 ]
 
 // variables
@@ -16,6 +46,7 @@ const barTop = document.querySelector(".icon-bar-top");
 const barMiddle = document.querySelector(".icon-bar-middle");
 const barBottom = document.querySelector(".icon-bar-bottom");
 const featuredSpeakers = document.querySelector("#featured_speakers");
+const moreButton = document.querySelector('#more_button');
 
 // functions
 
@@ -46,6 +77,7 @@ function createSpeaker(speaker) {
   pictureContainer.appendChild(speakerPicture);
   infoContainer.append(infoName,title,divisor,description);
   featuredSpeakers.appendChild(speakerContainer);
+  featuredSpeakers.appendChild(moreButton);
 
 }
 

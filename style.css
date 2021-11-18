@@ -200,7 +200,6 @@ article {
   background: var(--third_transparent);
   padding: 16px;
   display: flex;
-  /* grid-template-columns: 1fr 1fr 3fr; */
   flex-direction: row;
   column-gap: 20px;
   align-items: center;
@@ -262,23 +261,32 @@ footer>div>* {
   flex-grow: 0;
 }
 
+#featured_speakers {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  padding-bottom: 3rem;
+}
+
 /* dinamic cards */
 .speaker_container {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 2fr 5fr;
   column-gap: 24px;
+  max-width: 100%;
 }
 
 .picture_container {
   background-image: url(img/chessboard.svg);
   background-position: top left;
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: 60px;
+  width: 100%;
 }
 
 .speaker_picture {
+  width: 100%;
   transform: translate(16px, 16px);
-  max-width: 170px;
 }
 
 .info_container {
@@ -306,6 +314,28 @@ footer>div>* {
 .speaker_description {
   font-size: 16px;
   color: var(--secondary);
+}
+
+#more_button {
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  padding-block: 12px;
+  background: none;
+  border: 2px solid var(--third);
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+.dropdown_icon {
+  width: 32px;
+  height: 32px;
+  background-image: url(img/chevron.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* utility */
@@ -386,6 +416,15 @@ footer>div>* {
   section {
     padding-inline:10% ;
   }
+
+  #featured_speakers {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #speakers_header {
+    grid-area: 1/span 2;
+  }
+
 
   /* utility */
 

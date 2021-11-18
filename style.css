@@ -285,7 +285,7 @@ article {
 }
 
 footer {
-  padding: 2.5em;
+  padding: 30px;
 }
 
 footer > div {
@@ -296,6 +296,8 @@ footer > div {
 footer > div > * {
   width: 45%;
   flex-grow: 0;
+  color: var(--secondary);
+  font-size: 20px;
 }
 
 #featured_speakers {

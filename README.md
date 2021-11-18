@@ -15,6 +15,8 @@ This project is built to simulate an industrial automation company's website, fu
 
 ## Live Demo
 
+[Loom video](https://www.loom.com/share/e8d695d83cc941a9b50eebfa32fa2416)
+
 [GitHub pages deployment](https://maccrazyman.github.io/Capstone-module-1/)
 
 

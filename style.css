@@ -170,7 +170,7 @@ section {
 #homePage h2 {
   color: transparent;
   background: url(img/tecnologia-dura-fa.jpg);
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
@@ -201,7 +201,7 @@ section {
 }
 
 li {
-  display:contents;
+  display: contents;
 }
 
 #social_header a {
@@ -301,6 +301,7 @@ article {
   font-size: 24px;
   margin-block: 32px;
 }
+
 #partner {
   padding-bottom: 40px;
 }
@@ -469,7 +470,7 @@ footer > div > * {
 /* utility */
 iframe {
   border: none;
-  overflow-y:hidden;
+  overflow-y: hidden;
   width: 100%;
 }
 
@@ -551,7 +552,7 @@ iframe {
     align-items: stretch;
     gap: 4px;
   }
-  
+
   article {
     flex-direction: column;
     text-align: center;

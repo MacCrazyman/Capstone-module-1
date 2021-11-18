@@ -21,7 +21,7 @@ function toggleMenu() {
   barMiddle.classList.toggle('noShow');
 }
 
-function closeMenu () {
+function closeMenu() {
   navBar.classList.add('only_desktop');
   navBar.classList.remove('modal_menu');
   navBar.classList.remove('autoScroll');
@@ -30,11 +30,11 @@ function closeMenu () {
   barBottom.classList.remove('rotateNeg');
   barMiddle.classList.remove('noShow');
 }
-    
+
 // Adjusting the iframe height onload event
-iframe.onload = function(){
-    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-}
+iframe.onload = function () {
+  iframe.style.height = `${iframe.contentWindow.document.body.scrollHeight}px`;
+};
 
 // event listeners
 menuIcon.addEventListener('click', toggleMenu);

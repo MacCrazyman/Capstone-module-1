@@ -39,7 +39,6 @@ const speakers = [
 const featuredSpeakers = document.querySelector('#featured_speakers');
 const moreButton = document.querySelector('#more_button');
 
-
 function createSpeaker(speaker) {
   const speakerContainer = document.createElement('div');
   const pictureContainer = document.createElement('div');

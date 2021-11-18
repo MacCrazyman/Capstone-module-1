@@ -165,12 +165,17 @@ main>#homePage {
   background-color: var(--secondary);
 }
 
-#intro_p {
+.intro_p {
   padding: 1rem;
   border: 3px solid white;
   background-color: var(--third);
   margin-block: 1rem;
   max-width: 600px;
+}
+
+#aboutPage .intro_p {
+  border-color: var(--third);
+  background-color: white;
 }
 
 #event_time {

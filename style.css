@@ -455,6 +455,12 @@ footer > div > * {
 }
 
 /* utility */
+iframe {
+  border: none;
+  overflow-y:hidden;
+  width: 100%;
+}
+
 .noScroll {
   overflow-y: hidden;
 }

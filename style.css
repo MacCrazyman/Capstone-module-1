@@ -535,12 +535,24 @@ iframe {
   }
 
   #program_cards {
-    flex-flow: row wrap;
+    flex-flow: row;
+    align-items: stretch;
+    gap: 4px;
   }
   
   article {
     flex-direction: column;
+    text-align: center;
     width: 49%;
+  }
+
+  article * {
+    width: 100% !important;
+  }
+
+  article img {
+    padding: 16px;
+    width: 60% !important;
   }
 
   #featured_speakers {

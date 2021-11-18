@@ -167,6 +167,15 @@ section {
   padding-bottom: 3rem;
 }
 
+#homePage h2 {
+  color: transparent;
+  background: url(img/tecnologia-dura-fa.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+}
+
 #aboutPage {
   text-align: center;
   background-color: var(--third);
@@ -291,6 +300,9 @@ article {
   color: white;
   font-size: 24px;
   margin-block: 32px;
+}
+#partner {
+  padding-bottom: 40px;
 }
 
 #partner_list {

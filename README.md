@@ -63,6 +63,7 @@ Give a ⭐️ if you like this project!
 
 - This project was buil following a template from [Cindy Shin](https://www.behance.net/adagio07)
 - Template has [CC license](https://creativecommons.org/licenses/by-nc/4.0/)
+- Pictures and icons are property of [FISE](https://www.fise.co)
 
 ## 📝 License
 

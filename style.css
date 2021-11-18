@@ -69,11 +69,16 @@ html {
   background-image: url(img/mosaic_bg.png);
 }
 
-.section_hr {
-  width: 2em;
+hr {
+  width: 1rem;
   border: none;
   margin: 1em;
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 2px solid gray;
+}
+
+.section_hr {
+  width: 2rem;
+  border-bottom: 2px solid var(--primary);
 }
 
 .section_header {
@@ -255,6 +260,52 @@ footer>div {
 footer>div>* {
   width: 45%;
   flex-grow: 0;
+}
+
+/* dinamic cards */
+.speaker_container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  column-gap: 24px;
+}
+
+.picture_container {
+  background-image: url(img/chessboard.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+
+.speaker_picture {
+  transform: translate(16px, 16px);
+  max-width: 170px;
+}
+
+.info_container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-block: 8px;
+}
+
+.speaker_name {
+  font-size: 28px;
+  color: var(--secondary);
+}
+
+.speaker_title {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--primary);
+}
+
+.info_container hr {
+  margin: 0;
+}
+
+.speaker_description {
+  font-size: 16px;
+  color: var(--secondary);
 }
 
 /* utility */

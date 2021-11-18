@@ -109,6 +109,10 @@ hr {
   font-size: 2em;
 }
 
+.nav_link:hover {
+  color: var(--primary);
+}
+
 /* Page styling */
 nav {
   width: 100%;
@@ -260,6 +264,7 @@ article {
   flex-direction: row;
   column-gap: 20px;
   align-items: center;
+  width: 100%;
 }
 
 .card_icon {
@@ -513,10 +518,6 @@ footer > div > * {
     font-size: 0.5em;
   }
 
-  .nav_link:hover {
-    color: var(--primary);
-  }
-
   #menu {
     padding-block: initial;
     flex-direction: initial;
@@ -525,6 +526,15 @@ footer > div > * {
 
   section {
     padding-inline: 10%;
+  }
+
+  #program_cards {
+    flex-flow: row wrap;
+  }
+  
+  article {
+    flex-direction: column;
+    width: 49%;
   }
 
   #featured_speakers {

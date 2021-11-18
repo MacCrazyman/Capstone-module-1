@@ -99,6 +99,7 @@ hr {
 .unstyled {
   list-style-type: none;
   padding-inline-start: 0;
+  text-decoration: none;
 }
 
 .nav_link {
@@ -130,7 +131,7 @@ nav {
 }
 
 #menu {
-  gap: 1em;
+  gap: 50px;
   flex-direction: column;
   width: 100%;
 }
@@ -178,6 +179,23 @@ section {
 
 #social_header {
   background-color: var(--secondary);
+  justify-content: flex-end;
+  padding-block: 8px;
+}
+
+#social_header ul {
+  gap: 30px;
+}
+
+li {
+  display:contents;
+}
+
+#social_header a {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .intro_p {
@@ -493,6 +511,10 @@ footer > div > * {
   .nav_link {
     color: var(--secondary);
     font-size: 0.5em;
+  }
+
+  .nav_link:hover {
+    color: var(--primary);
   }
 
   #menu {

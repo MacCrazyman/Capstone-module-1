@@ -7,6 +7,7 @@ const barTop = document.querySelector('.icon-bar-top');
 const barMiddle = document.querySelector('.icon-bar-middle');
 const barBottom = document.querySelector('.icon-bar-bottom');
 const iframe = document.querySelector('iframe');
+const closer = document.querySelectorAll('.closer');
 
 // functions
 
@@ -19,6 +20,16 @@ function toggleMenu() {
   barBottom.classList.toggle('rotateNeg');
   barMiddle.classList.toggle('noShow');
 }
+
+function closeMenu () {
+  navBar.classList.add('only_desktop');
+  navBar.classList.remove('modal_menu');
+  navBar.classList.remove('autoScroll');
+  body.classList.remove('noScroll');
+  barTop.classList.remove('rotatePos');
+  barBottom.classList.remove('rotateNeg');
+  barMiddle.classList.remove('noShow');
+}
     
 // Adjusting the iframe height onload event
 iframe.onload = function(){
@@ -27,6 +38,4 @@ iframe.onload = function(){
 
 // event listeners
 menuIcon.addEventListener('click', toggleMenu);
-// iframe.addEventListener('load', function() {
-// speakers.forEach((speaker) => { createSpeaker(speaker); });
-// })
+closer.forEach((item) => item.addEventListener('click', closeMenu));

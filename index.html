@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fise </title>
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/cropped-favicon-f-192x192.png" sizes="192x192">
+</head>
+<body>
+
+  <!-- Page Header -->
+
+  <header>
+    <div class="btn btn_toggle btn_menu only_mobile">
+      <span class="icon-bar-container flex_container">
+        <span class="icon-bar icon-bar-top"></span>
+        <span class="icon-bar icon-bar-middle"></span>
+        <span class="icon-bar icon-bar-bottom"></span>
+      </span>
+    </div>
+    <section id="social_header" class="flex_container only_desktop">
+      <ul class="unstyled flex_container">
+        <li class="list_item"><img src="img/fb_icon.svg" alt="facebook_logo"></li>
+        <li class="list_item"><img src="img/twitter_icon.svg" alt="twitter_logo"></li>
+        <li class="list_item"><a class=" unstyled" href="">English</a></li>
+        <li class="list_item"><a class=" unstyled" href="">Logout</a></li>
+      </ul>
+    </section>
+    <section id="navigation" class="flex_container">
+      <nav class="nav_bar flex_container only_desktop">
+        <a id="nav_logo" class="nav_link only_desktop" href="home.html" target="iframe"><img src="img/fise.svg" alt="Fise logo"><h1 class="hidden">FISE</h1></a>
+        <ul id="menu" class="unstyled flex_container">
+          <li id="nav_home" class="list_item closer"><a class="nav_link" href="home.html" target="iframe">Home</a></li>
+          <li id="nav_about" class="list_item closer"><a class="nav_link" href="about.html" target="iframe">About</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <!-- Page content -->
+
+  <main>
+    
+    <iframe name="iframe" src="home.html">
+    </iframe>
+
+  </main>
+
+  <!-- Page footer -->
+  <section id="partner" class="darkBg">
+    <div class="section_header">
+      <h3 class="theme4">Partner</h3>
+      <hr class="section_hr">
+    </div>
+    <ul id="partner_list" class="unstyled flex_container">
+      <li><img src="img/e-SITCOLSAS-319ac4ba.jpg" alt="" class="partner_picture"></li>
+      <li><img src="img/logo-eie-6d422784.png" alt="" class="partner_picture"></li>
+      <li><img src="img/logo-ee1cc082.jpg" alt="" class="partner_picture"></li>
+      <li><img src="img/logo-enersinc03-38c348c4-1280x236.png" alt="" class="partner_picture"></li>
+      <li><img src="img/LOGO-SERIM-39835a09.jpg" alt="" class="partner_picture"></li>
+    </ul>
+  </section>
+  <footer>
+    <div class="flex_container">
+      <img id="footer_pic" src="img/fise.svg" alt="Fise logo">
+      <p>2015 Creative Commons korea. some rigths reserved</p>
+    </div>
+  </footer>
+  <!-- JS -->
+  <script src="script.js" ></script>
+</body>
+</html>

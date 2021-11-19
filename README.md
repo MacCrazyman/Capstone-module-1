@@ -15,6 +15,8 @@ This project is built to simulate an industrial automation company's website, fu
 
 ## Live Demo
 
+[Loom video](https://www.loom.com/share/e8d695d83cc941a9b50eebfa32fa2416)
+
 [GitHub pages deployment](https://maccrazyman.github.io/Capstone-module-1/)
 
 
@@ -63,6 +65,7 @@ Give a ⭐️ if you like this project!
 
 - This project was buil following a template from [Cindy Shin](https://www.behance.net/adagio07)
 - Template has [CC license](https://creativecommons.org/licenses/by-nc/4.0/)
+- Pictures and icons are property of [FISE](https://www.fise.co)
 
 ## 📝 License
 
